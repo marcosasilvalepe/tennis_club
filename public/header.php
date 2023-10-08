@@ -21,7 +21,7 @@
     
     <!-- <script defer type="text/javascript" src="js/socket.js"></script> -->
     <!-- <script defer type="text/javascript" src="js/main.js"></script> -->
-    <!--- <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&libraries=geometry&key=AIzaSyAn3Q-lednZdfCom9xnd2PX0LChtoP_BxA&callback=load_map"></script> -->
+    <!--- <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&libraries=geometry&key=&callback=load_map"></script> -->
 
     <script defer type="text/javascript" src="bundle.js"></script>
 </head>
