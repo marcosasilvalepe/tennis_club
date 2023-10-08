@@ -1,0 +1,286 @@
+<div>
+    <div class="login-container">
+        <form id="login-register-form" action="" class="form-login hidden">
+
+            <div class="login-nav">
+                <div class="login-nav__item active">
+                    <a href="#">INGRESAR</a>
+                </div>
+                <div class="login-nav__item">
+                    <a href="#">REGISTRARSE</a>
+                </div>
+            </div>
+
+            <div id="login-content">
+                <div>
+                    <label for="login-input-user" class="login__label">
+                        Usuario
+                    </label>
+                    <input id="login-input-user" class="login__input" type="text" placeholder="Email o número de teléfono">
+                    <label for="login-input-password" class="login__label">
+                        Password
+                    </label>
+                    <input id="login-input-password" class="login__input" type="password">
+                    <label for="login-sign-up" class="login__label--checkbox">
+                        <input id="login-persist-session" type="checkbox" checked="" class="login__input--checkbox">
+                        Recordarme
+                    </label>
+                    <button class="login__submit">Iniciar Sesión</button>
+                    <div class="login__forgot">¿ Olvidaste tu contraseña ?</div>
+                </div>
+                <div>
+                    <div id="register-content"></div>
+                </div>
+            </div>
+        </form>
+
+        <form id="logged-in-form" action="" class="form-login hidden">
+            <div id="logged-in">
+
+                <div class="header">
+
+                    <div class="row">
+
+                        <div class="user-image">
+                            <div>
+                                <div class="user-image-src"></div>
+                            </div>
+                            <div class="save-cancel-btns hidden">
+                                <div>
+                                    <i class="far fa-times"></i>
+                                </div>
+                                <div>
+                                    <i class="far fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="user-icons">
+                            <i class="fal fa-camera"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <p class="user-name"></p>
+                    </div>
+
+                    <div class="row">
+                        <p class="user-lastname"></p>
+                    </div>
+
+                    <div class="row">
+                        <p class="user-phone"></p>
+                    </div>
+
+                    <div class="row">
+                        <p class="user-email"></p>
+                    </div>
+
+                    <div class="user-image-background"></div>
+
+                    <div class="hidden">
+                        <input id="change-profile-image" class="hidden" type="file" accept="image/*">
+                    </div>
+
+                </div>
+
+                <div class="body">
+
+                    <div id="user-profile-data" class="hidden">
+                        <div class="user-profile-data-body">
+
+                            <div class="user-category">
+                                <p></p>
+                                <span>CATEGORIA</span>
+                            </div>
+
+                            <div class="user-ranking">
+                                <p></p>
+                                <span>RANKING</span>
+                            </div>
+
+                            <div class="user-birth">
+                                <p></p>
+                                <span>FECHA NACIMIENTO</span>
+                            </div>
+
+                            <div class="user-sex">
+                                <p></p>
+                                <span>SEXO</span>
+                            </div>
+
+                            <div class="user-height">
+                                <p></p>
+                                <span>ALTURA</span>
+                            </div>
+                            <div class="user-weight">
+                                <p></p>
+                                <span>PESO</span>
+                            </div>
+
+                            <div class="user-drive">
+                                <p></p>
+                                <span>DERECHO</span>
+                            </div>
+                            <div class="user-backhand">
+                                <p></p>
+                                
+                                <span>REVES</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-btns">
+
+                            <div id="user-profile-edit" class="btn">
+                                <i class="fas fa-user-edit"></i>
+                                <p>EDITAR PERFIL</p>
+                            </div>
+
+                            <div id="user-profile-change-password-btn" class="btn">
+                                <i class="fas fa-lock-alt"></i>
+                                <p>CAMBIAR CONTRASEÑA</p>
+                            </div>
+
+                            <div id="user-profile-show-reservations" class="btn">
+                                <i class="fas fa-calendar-alt"></i>
+                                <p>MIS RESERVAS</p>
+                            </div>
+
+                            <div id="user-profile-close-session" class="btn">
+                                <i class="fas fa-user-times"></i>
+                                <p>CERRAR SESION</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="user-profile-edit-data" class="hidden">
+
+                        <div>
+                            <span>Nombre</span>
+                            <input id="change-user-name" type="text" placeholder="NOMBRE">                        
+                        </div>
+
+                        <div>
+                            <span>Apellido</span>
+                            <input id="change-user-lastname" type="text" placeholder="APELLIDO">                        
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <input id="change-user-email" type="text" placeholder="EMAIL">
+                        </div>
+
+                        <div>
+                            <span>Teléfono</span>
+                            <input id="change-user-phone" type="text" placeholder="TELEFONO">
+                        </div>
+
+                        <div>
+                            <span>Fecha Nacimiento</span>
+                            <input id="change-user-birth" type="date">
+                        </div>
+
+                        <div>
+                            <span>Sexo</span>
+                            <select id="change-user-sex">
+                                <option disabled="" selected="">SELECCIONAR SEXO</option>
+                                <option value="M">MASCULINO</option>
+                                <option value="F">FEMENINO</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <span>Altura</span>
+                            <input id="change-user-height" type="text" placeholder="ALTURA">
+                        </div>
+
+                        <div>
+                            <span>Peso</span>
+                            <input id="change-user-weight" type="text" placeholder="PESO">
+                        </div>
+
+                        <div>
+                            <span>Derecho</span>
+                            <select id="change-user-drive">
+                                <option disabled="" selected="">SELECCIONAR DERECHO</option>
+                                <option value="Diestro">Diestro</option>
+                                <option value="Zurdo">Zurdo</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <span>Revés</span>
+                            <select id="change-user-backhand">
+                                <option disabled="" selected="">SELECCIONAR REVES</option>
+                                <option value="Una Mano">Una Mano</option>
+                                <option value="Dos Manos">Dos Manos</option>
+                            </select>
+                        </div>
+
+                        <div class="footer-btns">
+
+                            <div id="user-profile-edit-cancel" class="btn">
+                                <i class="fas fa-times-circle"></i>
+                                <p>CANCELAR</p>
+                            </div>
+
+                            <div id="user-profile-edit-save" class="btn">
+                                <i class="fas fa-check-circle"></i>
+                                <p>GUARDAR</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="change-password-container" class="hidden">
+                        <div>
+
+                            <div>
+                                <input id="user-profile-current-password" type="password" placeholder="CONTRASEÑA ACTUAL">
+                            </div>
+
+                            <div>
+                                <input id="user-profile-change-password" type="password" placeholder="NUEVA CONTRASEÑA">
+                            </div>
+
+                            <div>
+                                <input id="user-profile-confirm-password" type="password" placeholder="CONFIRMAR CONTRASEÑA">
+                            </div>
+
+                            <div class="footer-btns">
+
+                                <div id="user-profile-cancel-change-password" class="btn">
+                                    <i class="fas fa-times-circle"></i>
+                                    <p>CANCELAR</p>
+                                </div>
+
+                                <div id="user-profile-save-change-password" class="btn">
+                                    <i class="fas fa-check-circle"></i>
+                                    <p>GUARDAR</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="user-profile-my-reservations">
+                        <div>
+
+                            <div>
+                                <h3>MIS RESERVAS</h3>
+                            </div>
+
+                            <div class="container"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
